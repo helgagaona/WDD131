@@ -44,7 +44,7 @@ body {
 }
 
 .dark {
-    background-color: #3a3a3a; /* Dark background */
+    background-color: #333; /* Dark background */
     color: white; /* Light text */
 }
 .dark .content {
