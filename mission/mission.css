@@ -24,7 +24,7 @@ hr {
     margin-top: -12px;
     margin-bottom: 40px;
 }
-p, li, {
+p, li {
     font-size: 20px;
 }
 li {
@@ -36,4 +36,53 @@ footer {
 }
 .logo {
     width: 150px;
+}
+/* Default (light theme) styles - already set */
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: #3a3a3a; /* Dark background */
+    color: white; /* Light text */
+}
+.dark .content {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.dark h2 {
+    color: hsl(210, 75%, 81%); /* A lighter blue for better contrast */
+}
+
+.dark .logo {
+    max-width: 150px;
+    content: url('byui-logo_white.png'); /* Change logo for dark theme */
+}
+
+label {
+    font-family: arial;
+}
+#mode {
+    font-size: 16px; /* Change the font size */
+    padding: 8px;    /* Add padding for space inside */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    background-color: #f0f0f0; /* Light background color */
+    color: #333;     /* Text color */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+#mode:focus {
+    background-color: #e0e0e0; /* Change background on focus */
+    border-color: #006EB6; /* Change border color */
+    outline: none; /* Remove default focus outline */
+}
+#mode option {
+    padding: 10px; /* Space between options */
+    font-size: 16px; /* Font size for the options */
+    background-color: #f5f5f5; /* Background color for options */
+    color: #333; /* Text color for options */
+}
+#mode:hover {
+    border-color: #007dd1; /* Change border color on hover */
 }
