@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+body {
+    font-family: "Mooli", Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+header {
+    background-color: #2660A4;
+    color: white;
+    padding: 15px;
+}
+nav {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 10px; /* Space between the links */
+    margin-top: 20px;
+}
+nav button {
+    all: unset;
+    font-size: 20px;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:link:hover {
+    color: black;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+/* Style for the gallery */
+
+.gallery img {
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-color: white;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+footer {
+    background-color: #2660A4;
+    padding: 10px;
+    color: white;
+}
+@media screen and (min-width: 700px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav a {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .gallery {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav a {
+        display: inline; 
+    }
+    nav button {
+        display: none;
+    }
+}
