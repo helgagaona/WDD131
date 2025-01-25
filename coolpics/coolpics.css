@@ -22,12 +22,8 @@ nav button {
     font-size: 20px;
 }
 
-nav a:link {
+nav a {
     color: white;
-}
-
-nav a:link:hover {
-    color: black;
 }
 
 a:visited {
@@ -58,6 +54,7 @@ footer {
     nav a {
         display: none;
     }
+    
 }
 
 @media screen and (min-width: 1000px) {
@@ -75,5 +72,8 @@ footer {
     }
     nav button {
         display: none;
+    }
+    nav a:hover {
+        color: rgb(0, 58, 91);
     }
 }
