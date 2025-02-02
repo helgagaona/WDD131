@@ -125,6 +125,7 @@ footer {
     display: grid;
     place-items: center;
     z-index: 10;
+
 }
 
 .viewer img {
