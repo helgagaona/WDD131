@@ -46,14 +46,9 @@ a:hover {
 .information {
     margin: 20px;
 }
-.column-two {
-}
 .book-cover {
     max-width: 250px;
 }
-.column-three {
-}
-
 .skiptocontent a {
     position: absolute;
     left: -9999px; /* Move it off-screen */
