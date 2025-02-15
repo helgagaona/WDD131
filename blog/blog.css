@@ -3,6 +3,7 @@
 body {
     margin: 0 auto;
     font-family: "Poppins";
+
 }
 header {
     text-align: center;
@@ -17,9 +18,12 @@ nav ul{
     justify-content: right;
     background-color: #F2DC5D;
     color: black;
+    font-size: 12px;
+
 }
 a {
     text-decoration: none;
+    font-size: 2px;
 }
 a:hover {
     color: white;
