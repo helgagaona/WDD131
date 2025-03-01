@@ -17,5 +17,9 @@ a:hover {
     background-color: rgb(206, 172, 128);
 }
 .space {
-    height: 50px;
+    display: flex;
+    flex: wrap;
+    width: 90%;
+    gap: 15px;
+    margin: auto;
 }
