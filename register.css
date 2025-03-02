@@ -163,6 +163,9 @@
     font-weight: 500;
     color: green;
   }
+  .participant {
+    margin-top: 15px;
+}
   @media (max-width: 568px) {
     .columns div {
       width: 100%;

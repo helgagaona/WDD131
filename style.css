@@ -16,6 +16,7 @@ a:hover {
     color: white;
     background-color: rgb(206, 172, 128);
 }
+
 .space {
     display: flex;
     flex: wrap;
