@@ -24,3 +24,8 @@ a:hover {
     gap: 15px;
     margin: auto;
 }
+.space {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
