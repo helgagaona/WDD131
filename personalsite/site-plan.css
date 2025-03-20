@@ -100,11 +100,12 @@ nav a:hover {
 .quiz-questions {
     text-align: left;
 }
+.quiz-assets {
+    width: 100%;
+}
 @media only screen and (max-width: 600px) {
     .quiz-assets img {
         width: 70px;
     }
-    .quiz-assets {
-        width: 100%;
-    }
+    
   }
