@@ -104,4 +104,7 @@ nav a:hover {
     .quiz-assets img {
         width: 70px;
     }
+    .quiz-assets {
+        width: 100%;
+    }
   }
