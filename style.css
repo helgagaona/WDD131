@@ -1,0 +1,31 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+header h1{
+    margin-bottom: 25px;
+}
+a {
+    background-color: bisque;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 25px;
+    color: rgb(99, 3, 43);
+}
+a:hover {
+    color: white;
+    background-color: rgb(206, 172, 128);
+}
+
+.space {
+    display: flex;
+    flex: wrap;
+    width: 90%;
+    gap: 15px;
+    margin: auto;
+}
+.space {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
