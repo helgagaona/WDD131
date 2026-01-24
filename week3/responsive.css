@@ -50,6 +50,22 @@ footer {
 @media screen and (min-width: 700px) {
     main {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    nav a {
+        display: inline;
+    }
+    nav {
+        text-align: right;
+    }
+    .menu-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
     nav a {
@@ -58,5 +74,12 @@ footer {
     nav {
         text-align: right;
     }
+    .menu-btn {
+        display: none;
+    }
+    header,
+    main,
+    footer {
+    max-width: 100%;
 }
-          
+}
