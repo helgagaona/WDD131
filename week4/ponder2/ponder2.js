@@ -10,7 +10,14 @@ gallery.addEventListener('click', openModal);
 function openModal(e) {
     
 // Code to show modal  - Use event parameter 'e'   
-    
+    const image = e.target;
+    const src = image.getAttribute('src');
+    const alt = image.getAttribute('alt');
+    const largeSrc = src.replace('-sm', '-full');
+    modalImage.setAttribute('src', largeSrc);
+    modalImage.setAttribute('alt', alt);
+    modal.showModal();
+
 }
 // Close modal on button click
 closeButton.addEventListener('click', () => {
