@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: "Poppins";
+}
+header {
+    text-align: center;
+    font-family: "Roboto Slab";
+}
+nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    justify-content: end;
+    justify-items: end;
+    height: 25px;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: "Roboto Slab";
+    font-size: 15px;
+}
+a:hover {
+    color: rgb(186, 84, 101);
+}
+.grid {
+
+    max-width: 100%;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.column-one {
+    border-right: 1px solid rgb(186, 84, 101);
+    height: 500px;
+    text-align: right;
+}
+
+.information {
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+h3, h2, h4 {
+    margin: 2px;
+}
+.column-two {
+    text-align: center;
+}
+.book {
+    margin-bottom: 25px;
+}
+h2 {
+    margin-top: 10px;
+}
+.book-title {
+    color: rgb(186, 84, 101);
+    font-family: "Roboto Slab";
+}
+.column-two p {
+    text-align: left;
+}
+.column-two h2 {
+    text-align: left;
+}
+.book-cover {
+    max-width: 250px;
+    padding-top: 20px;
+}
+.skiptocontent a {
+    position: absolute;
+    left: -9999px; /* Move it off-screen */
+    background-color: #ff0; /* Background color (yellow) */
+    color: #000; /* Text color (black) */
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/* When the link is focused, bring it back on-screen */
+.skiptocontent a:focus {
+    left: 0; /* Move it back on screen */
+    background-color: rgb(214, 214, 214); /* Change background color when focused (green) */
+    color: #4e4e4e; /* Change text color when focused (white) */
+    outline: none; /* Remove the default focus outline */
+}
+footer {
+    background-color: rgb(248, 183, 194);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+@media (min-width: 700px) {
+    .grid {
+            display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    }
+}

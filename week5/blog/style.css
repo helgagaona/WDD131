@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+header {
+    text-align: center;
+    font-family: "Roboto Slab";
+}
+.skiptocontent a {
+    position: absolute;
+    left: -9999px; /* Move it off-screen */
+    background-color: #ff0; /* Background color (yellow) */
+    color: #000; /* Text color (black) */
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 0px 15px 15px 0px;
+}
+.skiptocontent a:focus {
+    left: 0; /* Move it back on screen */
+    background-color: rgb(214, 214, 214); /* Change background color when focused (green) */
+    color: #4e4e4e; /* Change text color when focused (white) */
+    outline: none; /* Remove the default focus outline */
+}
+nav {
+    border-top: 2px solid rgb(193, 169, 12);
+    border-bottom: 2px solid rgb(193, 169, 12);
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    justify-content: end;
+    justify-items: end;
+    height: 25px;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(148, 8, 8);
+    font-weight: 600;
+    font-family: "Roboto Slab";
+    font-size: 15px;
+}
+a:hover {
+    color: rgb(186, 84, 101);
+}
+footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-top: 2px solid rgb(193, 169, 12);
+    margin-top: 40px;
+}
+footer p {
+    padding: 10px;
+}
+
+.main-container {
+    margin-top:40px;
+    border-top: 2px solid rgb(193, 169, 12);
+}
+.grid {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.book-details {
+    text-align: right;
+}
+.book-details h3 {
+    font-style: italic;
+}
+.book-details h4, h3, h5, p {
+    font-weight: normal; /* NORMALIZE */
+    font-size: 15px; 
+    margin: 10px;
+}
+.book-cover .cover {
+    max-width: 200px;
+}
+.book-cover {
+    text-align: center;
+    margin-right: 200px;
+}
+.book-cover p {
+    text-align: left;
+}
+
+@media (min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        gap: 20px;
+    }
+    .book-details {
+        border-right: 2px solid rgb(193, 169, 12);
+    }
+    .grid {
+        margin-top: 40px;
+    }
+    .book-details h4, h3, h5, p {
+        margin-right: 40px;
+    }  
+}
