@@ -91,8 +91,13 @@ footer p {
 .book-cover p {
     text-align: left;
 }
+.book-cover h2 {
+    color: rgb(123, 10, 10);
+    font-family: "Roboto Slab";
+    text-align: left;
+}
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
     .grid {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
