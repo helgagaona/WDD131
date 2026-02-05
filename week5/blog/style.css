@@ -73,10 +73,10 @@ footer p {
 .book-details {
     text-align: right;
 }
-.book-details h3 {
+.book-details h2 {
     font-style: italic;
 }
-.book-details h4, h3, h5, p {
+.book-details h2, h3, p {
     font-weight: normal; /* NORMALIZE */
     font-size: 15px; 
     margin: 10px;
