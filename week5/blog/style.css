@@ -76,7 +76,7 @@ footer p {
 .date {
     font-style: italic;
 }
-.book-details h3, h2, p {
+.book-details h3, .date, p {
     font-weight: normal;
     font-size: 15px; 
 }
@@ -107,7 +107,7 @@ footer p {
     .grid {
         margin-top: 40px;
     }
-    .book-details h2, h4, h3, h5, p {
+    .book-details .date, h4, h3, h5, p {
         margin-right: 40px;
     }  
 }
