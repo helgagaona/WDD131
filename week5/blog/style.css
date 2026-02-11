@@ -73,20 +73,18 @@ footer p {
 .book-details {
     text-align: right;
 }
-.book-details h2 {
+.date {
     font-style: italic;
 }
-.book-details h2, h3, p {
-    font-weight: normal; /* NORMALIZE */
+.book-details h3, h2, p {
+    font-weight: normal;
     font-size: 15px; 
-    margin: 10px;
 }
 .book-cover .cover {
     max-width: 200px;
 }
 .book-cover {
     text-align: center;
-    margin-right: 200px;
 }
 .book-cover p {
     text-align: left;
@@ -109,7 +107,7 @@ footer p {
     .grid {
         margin-top: 40px;
     }
-    .book-details h4, h3, h5, p {
+    .book-details h2, h4, h3, h5, p {
         margin-right: 40px;
     }  
 }
