@@ -1,78 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"> 
-    <meta name="description" content="an in depth guide to HTML meta tags.">
+    <meta name="description" content="An in-depth guide to HTML meta tags.">
     <meta name="author" content="Helga Gaona">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Card Form</title>
     <link href="prove.css" rel="stylesheet">  
+    <script src="prove.js" defer></script>
     <link rel="icon" type="image/png" href="favicon.ico">
 </head>
 <body>
+    <!-- Error Alert -->
+    <div id="errorAlert" class="error-alert">
+    <span id="errorMessage">This is an error message.</span>
+    </div>
     <section>
-        <h2>Credit Card Form</h2> <!-- Added a heading for the section -->
         <form id="cardForm-grid" class="cardForm-grid">
             <div class="topCard">
-            <div class="total">
-                <p>TOTAL:</p>
-                <p>$119</p>
-            </div>
-            <img class="card-image" src="icon.svg" alt="card-icon">
-            <p id="cardNumberContainer">
-                <label for="cardNumber">CARD NUMBER</label>
-                <input
-                type="number"
-                id="cardNumber"
-                name="cardNumber"
-                pattern="[0-9]{16}"
-                placeholder="1234 5678 9101 1020"
-                required
-                >
-            </p>
-            <p id="cardHolderContainer">
-                <label for="cardHolder">CARD HOLDER</label>
-                <input type="text" id="cardHolder" placeholder="John Doe" name="cardHolder" required>
-            </p>   
-            <p id="expirationContainer"> 
-                <label for="expirationMonth">EXPIRATION</label>
-                <input
-                type="number"
-                id="expirationMonth"
-                name="expirationMonth"
-                pattern="[0-9]{2}"
-                placeholder="MM"
-                required
-                aria-labelledby="expirationMonth"
-                >
-                <input
-                type="number"
-                id="expirationYear"
-                name="expirationYear"
-                pattern="[0-9]{2}"
-                placeholder="YY"
-                required
-                aria-labelledby="expirationYear"
-                >
+                <div class="total">
+                    <p>TOTAL:</p>
+                    <p>$119</p>
+                </div>
+                <img class="card-image" src="icon.svg" alt="card-icon">
+
+                <!-- Card Number -->
+                <div id="cardNumberContainer">
+                    <label for="cardNumber">CARD NUMBER</label>
+                    <input
+                        type="text"
+                        id="cardNumber"
+                        name="cardNumber"
+                        inputmode="numeric"
+                        pattern="\d{16}"
+                        placeholder="1234 5678 9101 1020"
+                        required
+                    >
+                </div>
+
+                <!-- Card Holder -->
+                <div id="cardHolderContainer">
+                    <label for="cardHolder">CARD HOLDER</label>
+                    <input
+                        type="text"
+                        id="cardHolder"
+                        name="cardHolder"
+                        placeholder="John Doe"
+                        required
+                    >
+                </div>
+
+                <!-- Expiration Date -->
+                <div id="expirationContainer"> 
+                    <label for="expirationMonth">EXPIRATION</label>
+                    <input
+                        type="text"
+                        id="expirationMonth"
+                        name="expirationMonth"
+                        pattern="\d{2}"
+                        placeholder="MM"
+                        inputmode="numeric"
+                        required
+                    >
+                    <input
+                        type="text"
+                        id="expirationYear"
+                        name="expirationYear"
+                        pattern="\d{2}"
+                        placeholder="YY"
+                        inputmode="numeric"
+                        required
+                    >
+                </div>
             </div>
 
             <div class="bottomCard"> 
                 <div class="black"></div>
             </div>
+
+            <!-- CVC / CVV -->
             <div class="secretCodeContainer">
-                    <p id="secretCodeLabel">
-                        <label for="secretCode">CVC/CVV</label>
-                            <input
-                                type="number"
-                                id="secretCode"
-                                name="secretCode"
-                                pattern="[0-9]{3}"
-                                placeholder="xxx"
-                                required
-                            >
-                </div>
-            <button>Submit</button>
+                <label for="secretCode">CVC/CVV</label>
+                <input
+                    type="text"
+                    id="secretCode"
+                    name="secretCode"
+                    pattern="\d{3}"
+                    placeholder="xxx"
+                    inputmode="numeric"
+                    required
+                >
+            </div>
+            <button type="submit">Submit</button>
         </form> 
     </section>
 </body>
