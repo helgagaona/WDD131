@@ -38,5 +38,8 @@ hr {
 margin-top: 50px;
 }
 @media screen and (min-width: 550px) {
-    
+    .main-nav {
+        flex-direction: row;
+        justify-content: end;
+    }
 }         
