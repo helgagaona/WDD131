@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico">
     
-    <!-- Social Media Meta Tags -->
     <meta property="og:title" content="RecipeBook | Helga Gaona">
     <meta property="og:type" content="website">
     <meta property="og:description" content="A collection of delicious recipes.">
@@ -15,21 +14,28 @@
     <meta property="og:url" content="https://helgagaona.github.io/WDD131/">
     <meta name="twitter:card" content="summary_large_image">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+
     <title>RecipeBook | Helga Gaona</title>
+
+    <link rel="preload" href="recipes.css" as="style">
     <link rel="stylesheet" href="recipes.css">
+    
     <script src="recipes.js" defer></script>
 </head>
 <body>
     <header>
-        <img class="logo" src="images/recipe-book.png" alt="Recipe Book Logo">
+        <img class="logo" src="images/recipe-book.png" alt="Recipe Book Logo" width="100" height="100">
         <h1 class="title">RecipeBook</h1>
     </header>
     
     <div class="search-container">
-        <form>
+        <form role="search">
             <input type="text" id="search-input" placeholder="Find a Recipe" required>
             <button type="submit" id="search-button" aria-label="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" aria-hidden="true">
                     <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
                 </svg>
             </button>
@@ -37,21 +43,22 @@
     </div>
 
     <div class="divider"></div>
+
     <main>
-        <section class="recipes">
-        </article> -->
-        </section>
+        <section class="recipes" id="recipe-list">
+            </section>
     </main>
+
     <footer>
         <div class="social">
             <a href="#" aria-label="Instagram">
-                <img src="images/instagram_icon.svg" alt="Instagram">
+                <img src="images/instagram_icon.svg" alt="Instagram" width="24" height="24">
             </a>
             <a href="#" aria-label="YouTube">
-                <img src="images/youtube_icon.svg" alt="YouTube">
+                <img src="images/youtube_icon.svg" alt="YouTube" width="24" height="24">
             </a>
             <a href="#" aria-label="Pinterest">
-                <img src="images/pinterest_icon.svg" alt="Pinterest">
+                <img src="images/pinterest_icon.svg" alt="Pinterest" width="24" height="24">
             </a>
         </div>
         <p>
