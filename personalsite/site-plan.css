@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #faf0c6;
+    --secondary-color: #e9d4c9;
+    --accent1-color: #c6b194;
+    --accent2-color: #ffffff;
+    --accent3-color: #c9e0dd;
+    --font1-color: black;
+    --heading-font: 'Poppins', sans-serif;
+    --paragraph-font: 'Poppins', sans-serif;
+}
+body {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--accent2-color);
+    color: var(--font1-color);
+    text-align: center;
+}
+header {
+    background: var(--accent2-color);
+    color: black;
+    padding: 2rem;
+}
+.logo-header {
+    width: 100px;
+}
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+main {
+    
+    padding: 2rem;
+    max-width: 1000px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+}
+.colors {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+.color-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+#overview {
+    text-align: left;
+}
+.primary { background-color: var(--primary-color); }
+.secondary { background-color: var(--secondary-color); }
+.accent1 { background-color: var(--accent1-color); }
+.accent2 { background-color: var(--accent3-color); }
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: var(--primary-color);
+    padding: 1rem;
+}
+nav a {
+    color: var(--font1-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    background: var(--primary-color);
+    color: var(--accent1-color);
+    border-radius: 5px;
+}
+.logo-2 {
+    border-radius: 100px;
+}
+.home-wireframe img{
+    max-width: 65%;
+
+}
+.quiz-wireframe img{
+    max-width: 100%;
+}
+.quiz-assets {
+    display: flex;
+    flex-wrap: wrap;
+}
+.quiz-assets img {
+    max-width: 200px;
+}
+.home-assets {
+    display:flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.home-assets img {
+    width: 50%;
+}
+.quiz-questions {
+    text-align: left;
+}
+.quiz-assets {
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .quiz-assets img {
+        width: 70px;
+    }
+    
+  }

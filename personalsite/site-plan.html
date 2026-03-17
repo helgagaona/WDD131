@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="A plan for my website"> 
+    <meta name="author" content="Helga Gaona">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site-plan.css" />
+</head>
+<body>
+    <header>
+        <img class="logo-header" src="images/logo-white.png" alt="logo in black">
+        <h2>Helga Gaona | WDD 131</h2>
+    </header>
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#style-guide">Style Guide</a>
+        <a href="#content">Content</a>
+    </nav>
+    <main>
+        <!-- ------------------------Steps 2-3------------------------------ -->
+        <section id="overview">
+            <h2>Overview</h2>
+            <h3>Purpose</h3>
+            <p>The purpose of my website is to provide visitors with a daily dose of inspiration and motivation through a fun and interactive quiz. By taking the quiz, users can select what inspires them most—whether it's motivation, creativity, or peace—and receive a personalized quote of the day based on their choice. The website aims to create an engaging and uplifting experience, offering visitors a moment of reflection and positivity as they go about their day. It’s a place to explore different perspectives and get inspired, all while enjoying a simple, user-friendly experience.</p>
+            <h3>Audience</h3>
+            <p>The target audience includes individuals seeking daily inspiration, people interested in self-improvement, busy individuals who want quick motivational content, quiz enthusiasts, and followers of motivational or positive thinking content. The website is designed to be accessible and engaging for users of all ages who appreciate reflective quotes and daily positivity.</p>
+            <h3>Dynamic Elements</h3>
+            <ul>
+                <li><strong>Interactive quiz:</strong> Users will fill out a quiz to select their mood. JavaScript functions like `getQuizData()` and `displayQuote()` will be used to process the quiz and display a personalized quote. The form will listen for the `submit` event and update the page dynamically.</li>
+            
+                <li><strong>Filtering:</strong> Users will be able to filter quotes by author and category. JavaScript will use the `filter()` method to display quotes based on selected criteria, and DOM manipulation will update the page with matching quotes.</li>
+            
+                <li><strong>Forms:</strong> Users will be able to submit their own quotes. The form will listen for the `submit` event, and the new quote will be saved to Firebase using an `addQuote()` function, showing how objects and arrays will be used to store and manage quotes.</li>
+            
+                <li><strong>JavaScript logic:</strong> Conditional statements (`if/else`) will be used to display different quotes based on the user's mood selection, such as showing an inspirational quote if "happy" is chosen.</li>
+            
+                <li><strong>DOM Manipulation:</strong> JavaScript will interact with the DOM to select elements and update them, such as showing the quiz results and updating the quote list when the user filters quotes.</li>
+            
+                <li><strong>Event listeners:</strong> JavaScript will listen for events like form submissions (`submit`) and filter changes to trigger actions like displaying personalized quotes and filtering the quote list.</li>
+            
+                <li><strong>Objects:</strong> Quotes will be stored as objects with properties like `author`, `text`, and `category`. These will be manipulated to display quotes based on user input.</li>
+            
+                <li><strong>ES Modules:</strong> JavaScript will be organized into modules (e.g., `quiz.js` for the quiz logic, `quotes.js` for managing quotes), helping to keep the code modular and maintainable.</li>
+            
+                <li><strong>Arrays and Array Methods:</strong> Arrays will be used to store quotes, and methods like `filter()`, `map()`, and `forEach()` will be used to manage and display quotes dynamically. For example, `filter()` will be used to show quotes by category, and `map()` could be used to create an array of authors.</li>
+            </ul>
+            
+            </p>
+        </section>
+        <hr>
+        
+        <section id="branding">
+            <h2>Branding</h2>
+            <h3>Website Logo</h3>
+            <img class="logo-2" src="images/logoblack.png" alt="Logo" style="max-width:200px;">
+        </section>
+        <hr>
+        <section id="style-guide">
+            <h2>Style Guide</h2>
+            <!-- ------------------------Steps 4-8------------------------------ -->
+            <h3>Color Palette</h3>
+            <div class="colors">
+                <div class="color-box primary"></div>
+                <div class="color-box secondary"></div>
+                <div class="color-box accent1"></div>
+                <div class="color-box accent2"></div>
+            </div>
+            <h3>Typography</h3>
+
+			<h4>
+				Heading Font: Poppins
+			</h4>
+			<h4>
+				Paragraph Font: Poppins
+			</h4>
+			<h3>Normal paragraph example</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+			<h3>Colored paragraph example</h3>
+			<p class="colored">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat.
+			</p>
+            <h3>Navigation</h3>
+			<!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Quiz</a>
+                <a href="#">All Quotes</a>
+                <a href="#">Submit your quote</a>
+			</nav>
+        </section>
+        <!-- ------------------------Step 10------------------------------ -->
+			<hr />
+            <section id="content">
+			<h2>Content</h2>
+			<h3>Home page</h3>
+			<div class="home-assets">
+                <img src="images/Home Wireframe/Assets Home.webp" alt="Home Assets" />
+                <img src="images/Home Wireframe/hero image.jpeg" alt="Hero Image" />
+                <img src="images/Home Wireframe/yoga girl 2.jpeg" alt="Yoga Girl" />
+                <img src="images/Home Wireframe/Yoga Girl.webp" alt="Yoga Girl" />
+                <h4>Home Page Text</h4>
+                <p>Welcome to the Quote of the Day Quiz!
+                    Looking for some daily inspiration or a moment of reflection? You've come to the right place! Our interactive quiz will help you discover the perfect quote to guide you through your day, based on what you need most—whether it's motivation, creativity, or peace.
+                    Take a few seconds, answer the quiz, and receive a personalized quote tailored just for you. Let us bring a smile to your face and a spark to your day!</p>
+            </div>
+
+			<h3>Quiz</h3>
+            <div class="quiz-assets">
+                <img src="images/Faces/Happy Face.png" alt="Happy face" />
+                <img src="images/Faces/Good Face.png" alt="Good face" />
+                <img src="images/Faces/Normal Face.png" alt="Normal face" />
+                <img src="images/Faces/Sad Face.png" alt="Sad face" />
+                <img src="images/Faces/Unhappy Face.png" alt="Unhappy face" />
+            </div>
+            <h4>Quiz Page Text</h4>
+                <div class="quiz-questions">
+                    <h4>What Inspires You Today?</h4>
+                    <p>Take this quick quiz to receive a personalized quote based on your mood!</p>
+                    
+                    <h2>Choose your mood based on today's experience:</h2>
+
+                    <p><strong>How did your day start?</strong></p>
+                    <p>1. "Full of energy" – A great way to start the day!</p>
+                    <p>2. "A bit slow" – Taking it easy to ease into the day.</p>
+                    <p>3. "On a positive note" – Feeling good about the start of the day!</p>
+                    <p>4. "Quite stressful" – A challenging start, but you’re pushing through.</p>
+                    <p>5. "Pretty relaxing" – A calm and smooth beginning to the day.</p>
+                    
+                    <p><strong>What’s been the highlight of your day so far?</strong></p>
+                    <p>1. "A great conversation" – Connecting with others always lifts the mood.</p>
+                    <p>2. "Achieving something I set out to do" – That feeling of accomplishment!</p>
+                    <p>3. "Taking some time for myself" – You deserve a moment to recharge.</p>
+                    <p>4. "Overcoming a challenge" – Facing and conquering obstacles.</p>
+                    <p>5. "Spending time with someone important" – Cherishing special moments together.</p>
+                    
+                    <p><strong>How are you feeling as the day goes on?</strong></p>
+                    <p>1. "Motivated to keep going" – You’ve got the energy to finish strong!</p>
+                    <p>2. "Needing a break" – It’s okay to pause and gather strength.</p>
+                    <p>3. "Content with how things are going" – Everything feels just right today.</p>
+                    <p>4. "A little overwhelmed" – Taking it step by step, you’ve got this.</p>
+                    <p>5. "Grateful for today’s experiences" – A day filled with meaningful moments.</p>
+                    
+                    <h2>Your Quote of the Day:</h2>
+                    
+                    <h3>If your mood score is based on motivation:</h3>
+                    <p>"The only way to do great work is to love what you do." – Steve Jobs</p>
+                    <p>"Don't watch the clock; do what it does. Keep going." – Sam Levenson</p>
+                    <p>"Success is not final, failure is not fatal: It is the courage to continue that counts." – Winston Churchill</p>
+                    
+                    <h3>If your mood score is based on creativity:</h3>
+                    <p>"Creativity is intelligence having fun." – Albert Einstein</p>
+                    <p>"The creative adult is the child who survived." – Ursula K. Le Guin</p>
+                    <p>"You can’t use up creativity. The more you use, the more you have." – Maya Angelou</p>
+                    
+                    <h3>If your mood score is based on peace:</h3>
+                    <p>"Peace begins with a smile." – Mother Teresa</p>
+                    <p>"Do not anticipate trouble, or worry about what may never happen. Keep in the sunlight." – Benjamin Franklin</p>
+                    <p>"The mind is everything. What you think you become." – Buddha</p>
+                    
+                </div>
+            
+			<p></p>
+			<h2>Wireframes</h2>
+
+			<h3>Home</h3>
+            <div class="home-wireframe">
+                <img src="images/Home Wireframe/1.png" alt="home page wireframe" />
+                <img src="images/Home Wireframe/2.png" alt="home page wireframe" />
+                <img src="images/Home Wireframe/3.png" alt="home page wireframe" />
+            </div>
+
+			<h3>Quiz</h3>
+			<div class="quiz-wireframe">
+                <img src="images/Quiz Wireframe/1.png" alt="quiz page wireframe" />
+                <img src="images/Quiz Wireframe/2.png" alt="quiz page wireframe" />
+            </div>
+            </section>
+    </main>
+</body>
+</html>
