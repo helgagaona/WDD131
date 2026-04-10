@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take The Quiz</title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/quoteData.js" defer></script>
+    <script src="js/quiz.js" defer></script>
+    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="images/favicon_io/apple-touch-icon.png">
+
+    <!-- Web App Manifest (includes Android chrome icons) -->
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+</head>
+<body>
+    <header>
+        <!-- Logotype -->
+        <img class="logo-top" src="images/logo-white.png" alt="Site Logo">
+
+        <!-- Navigation Menu -->
+        <nav>
+            <div class="hamburger-menu" aria-label="Toggle Navigation Menu" aria-expanded="false" role="button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navigation-menu hide">
+                <a href="index.html">Home</a>
+                <a href="quotes.html">View Quotes</a>
+                <a href="create.html">Submit a Quote</a>
+                <a href="quiz.html">Daily Quote Quiz</a>
+            </div>
+        </nav>
+    </header>
+    <main class="section-width">
+        <section id="quiz-container">
+            <div class="quiz">
+                <img id="image-quiz" src="images/Emojis/Q1.png" alt="Quiz Emoji">
+                <h2 id="question">How are you feeling today after realizing that you are amazing?</h2>
+                <section class="quiz-options">
+                    <button class="button-a answer">Answer 1</button>
+                    <button class="button-a answer">Answer 2</button>
+                    <button class="button-a answer">Answer 3</button>
+                </section>
+            </div>
+        </section>
+
+        <section id="result-container">
+            <div class="results hide">
+                    <div>
+                        <h3 id="result-message">Results:</h3>
+                        <p id="result-title">Happy</p>
+                    </div>
+                    <img id="result-image" src="images/Faces/normal_face.png" alt="Result Emoji">
+                    <div id="result-quote-container">
+                        <p class="quote" id="result-quote">"Tell me, what is it you plan to do with your one wild and precious life?"</p>
+                        <p class="author" id="result-author">- Author Name</p>
+                    </div>
+                    <button class="button-a">Take Quiz Again</button>
+            </div>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer>
+            <div class="footer-container">
+                <div>
+                    <p>&copy; 2026 Helga Gaona.</p>
+                    <p>Designed with ❤️</p>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #faf0c6;
+    --secondary-color: #e9d4c9;
+    --accent1-color: #c6b194;
+    --accent2-color: #ffffff;
+    --accent3-color: #c9e0dd;
+    --hover-color: #584D1F;
+    --font1-color: black;
+    --font2-color: #00a6ff;
+    --heading-font: Times New Roman, sans-serif;
+    --paragraph-font: Arial, sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+.section-width {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* BUTTONS */
+button {
+    background-color: transparent;
+    border: 0px;
+}
+.button-a {
+    background-color: var(--primary-color);
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    width: 100%;
+    height: 3em;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    margin: 0 auto;
+
+}
+.button-b {
+    background-color: var(--primary-color);
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    width: 100%;
+    height: 3em;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    margin: 0 auto;
+}
+/* HEADER */
+.logo-top {
+    width: 100px;
+}
+/* NAVIGATION MENU */
+nav {
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+.navigation-menu {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.navigation-menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    margin: 0 auto;
+}
+.navigation-menu a:hover {
+    color: var(--hover-color)
+}
+.navigation-menu li {
+    list-style-type: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.hamburger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: var(--font1-color);
+    border-radius: 10px;
+}
+
+/* TEXT STYLES */
+h1 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+
+}
+/* h1, p, li, ul {
+    margin: 0 auto;
+} */
+
+/* FOOTER */
+footer {
+    background-color: var(--accent3-color);
+    padding: 20px;
+    position: relative;
+}
+.hide {
+    display:none;
+}
+
+@media (min-width: 700px) {
+    .hamburger-menu {
+        display: none;
+    }
+    .navigation-menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .navigation-menu a {
+        margin: 0 auto;
+    }
+    .button-a {
+        max-width: 400px;
+    }
+
+};

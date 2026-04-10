@@ -1,0 +1,58 @@
+@import url('template.css');
+@import url('quiz.css');
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+#question, #result-message {
+    font-size: 1.5em;
+}
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#result-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+#result-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--font2-color);
+}
+.quote {
+    text-align: left;
+    font-size: 2em;
+}
+.author {
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+    font-size: 1.8em;
+}
+.answer {
+    min-width: 320px;
+}
+#result-quote-container {
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+.hide {
+    display:none;
+}

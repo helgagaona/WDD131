@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="Get a quote based on your mood."> 
+    <meta name="author" content="Helga Gaona">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Submit a Quote</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="other.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <img class="logo-top" src="images/logo-white.png" alt="logotype main menu">
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quotes.html">View Quotes</a></li>
+            <li><a href="create.html">Submit a Quote</a></li>
+            <li><a href="quiz.html">Daily Quote Quiz</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="container" id="authContainer">
+        <h2>To submit a quote you must Login through Google</h2>
+        <button id="googleLoginBtn">Sign in with Google</button>
+    </div>
+        <!-- Hero Section -->
+        <div class="hero-section" id="heroSection">
+                <div class="banner-text">
+                    <h1>Submit a Quote</h1>
+                    <p>Add your favorite quote so that everyone can feel inspired!</p>
+              </div>
+        </div>
+    <!-- Quote Submission Form (Initially Hidden) -->
+    <div id="quoteForm">
+        
+        <div class="text-area">
+            <!-- Quote Input -->
+            <textarea id="quoteInput" maxlength="100" placeholder="Write your quote here..."></textarea>
+        </div>
+        <div class="right-column">
+            <div class="author">
+                <!-- Author Input -->
+                <label for="authorInput">Author:</label>
+                <input type="text" id="authorInput" placeholder="Enter the author's name">
+            </div>
+            <div class="category">
+                <!-- Category Dropdown -->
+                <label for="categorySelect">Select Category:</label>
+                <select id="categorySelect">
+                    <option value="Love">Love</option>
+                    <option value="Creativity">Creativity</option>
+                    <option value="Faith">Faith</option>
+                    <option value="Success">Success</option>
+                </select>
+            </div>
+            <div class="mood">
+                <label for="moodSelect">Select Mood:</label>
+                <select id="moodSelect">
+                    <option value="low">Low Mood</option>
+                    <option value="medium">Medium Mood</option>
+                    <option value="high">High Mood</option>
+                </select>
+            </div>
+            <!-- Submit Button -->
+            <button id="submitQuoteBtn" type="button">Submit</button>
+        </div>
+    </div>
+
+    <!-- Logout Button (Initially Hidden) -->
+    <button id="logoutBtn" style="display: none;">Sign Out</button>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-container">
+                <p>&copy; 2025 Helga Arellano Gaona. All rights reserved.</p>
+                <p>Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="create.js"></script>
+
+</body>
+</html>

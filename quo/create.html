@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Quotes</title>
+    <link rel="stylesheet" href="css/submit-quote.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/quoteData.js" defer></script>
+    <script src="js/create.js" defer></script>
+
+    <link rel="preload" as="image" href="images/hero-image.jpeg" fetchpriority="high">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="images/favicon_io/apple-touch-icon.png">
+
+    <!-- Web App Manifest (includes Android chrome icons) -->
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+</head>
+<body>
+    <header>
+        <!-- Logotype -->
+        <img class="logo-top" src="images/logo-white.png" alt="Site Logo">
+
+        <!-- Navigation Menu -->
+        <nav>
+            <div class="hamburger-menu" aria-label="Toggle Navigation Menu" aria-expanded="false" role="button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navigation-menu hide">
+                <a href="index.html">Home</a>
+                <a href="quotes.html">View Quotes</a>
+                <a href="create.html">Submit a Quote</a>
+                <a href="quiz.html">Daily Quote Quiz</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <div class="hero-section" id="heroSection" style="background-image: url('images/calm.jpg');">
+                <h1>Save Your Quotes</h1>
+                <p>Add your favorite quotes so that you can feel inspired!</p>
+                <p>(They will be gone once you refresh the page)</p>
+        </div>
+        <!-- Quote Submission Form (Initially Hidden) -->
+        <form method="GET" id="quoteForm">
+            
+            <div class="text-area">
+                <!-- Quote Input -->
+                <label for="quoteInput">Your Quote</label>
+                <textarea id="quoteInput" name="quote"type="text" maxlength="100" placeholder="Write your quote here..." required></textarea>
+            </div>
+            <div class="right-column">
+                <div class="authors">
+                    <!-- Author Input -->
+                    <label for="authorInput">Author:</label>
+                    <input type="text" id="authorInput" name="author" placeholder="Enter the author's name" required>
+                </div>
+                <div class="category">
+                    <!-- Category Dropdown -->
+                    <label for="categorySelect">Select Category:</label>
+                    <select id="categorySelect" name="category" required>
+                        <option value="love">Love</option>
+                        <option value="creativity">Creativity</option>
+                        <option value="faith">Faith</option>
+                        <option value="success">Success</option>
+                    </select>
+                </div>
+                <div class="mood">
+                    <label for="moodSelect">Select Mood:</label>
+                    <select id="moodSelect" name="mood" required>
+                        <option value="3">Low Mood</option>
+                        <option value="6">Medium Mood</option>
+                        <option value="9">High Mood</option>
+                    </select>
+                </div>
+                <!-- Submit Button -->
+                <button class="button-a" id="submitQuoteBtn" type="button">Submit</button>
+            </div>
+        </form>
+        <div class="my-quotes">
+            <h2>Here are your quotes</h2>
+            <section id="my-quotes-list">
+            <!-- Quotes will be dynamically inserted here -->
+        </section>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+            <div class="footer-container">
+                <div>
+                    <p>&copy; 2026 Helga Gaona.</p>
+                    <p>Designed with ❤️</p>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

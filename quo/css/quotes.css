@@ -1,0 +1,54 @@
+@import url('template.css');
+@import url('quiz.css');
+.section-width {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px auto;
+}
+#filters {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+#filter-author, #filter-category {
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 10px;
+}
+#quotes-list {
+    text-align: left;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.line {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    width: 100%;
+    margin:auto;
+}
+.hide {
+    display:none;
+}
+@media (min-width: 700px) {
+    #filters {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #filter-author, #filter-category {
+    width: 250px;
+}   
+    .button-a {
+        width: 20%;
+        margin: 0;
+    }
+    .container {
+        min-height: 300px;
+    }
+
+};
