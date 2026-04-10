@@ -1,3 +1,5 @@
+import { quotesData } from './quoteData.js';
+
 const questions = [
   {
     question: "How are you feeling today?",

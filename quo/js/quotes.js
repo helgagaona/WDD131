@@ -1,3 +1,5 @@
+import { quotesData } from './quoteData.js';
+
 // Function to display quotes
 function displayQuotes(quotesToDisplay) {
     const quotesContainer = document.getElementById('quotes-list');

@@ -1,3 +1,4 @@
+
 const moodScoreMap = { low: 3, medium: 6, high: 9 };
 
 let userQuotes = [];
